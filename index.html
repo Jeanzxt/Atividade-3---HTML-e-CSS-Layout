@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequência Discos - Rap e Hip-hop</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #111111;
+      color: #f5f2e9;
+      font-family: Arial, sans-serif;
+    }
+
+    header, main, footer {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #444444;
+    }
+
+    .logo {
+      color: #ff5a5f;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 18px;
+      color: #f5f2e9;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #ff5a5f;
+    }
+
+    .destaque {
+      margin: 35px 0;
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      background-color: #ff5a5f;
+      color: #111111;
+    }
+
+    .texto-destaque, .imagem-destaque {
+      width: 47%;
+      min-width: 220px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 42px;
+    }
+
+    .imagem-destaque {
+      height: 260px;
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 12px 18px;
+      background-color: #111111;
+      color: white;
+      text-decoration: none;
+    }
+
+    .botao:hover {
+      background-color: #444444;
+    }
+
+    .titulo-secao {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    .sacola {
+      color: #ff5a5f;
+      text-align: right;
+    }
+
+    .lista-discos {
+      margin: 20px 0 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .disco {
+      position: relative;
+      width: 30%;
+      min-width: 230px;
+      margin-bottom: 20px;
+      background-color: #222222;
+      transition: transform 0.3s;
+    }
+
+    .disco:hover {
+      transform: scale(1.03);
+    }
+
+    .disco img {
+      width: 100%;
+    }
+
+    .numero {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 5px;
+      background-color: #ff5a5f;
+      color: #111111;
+    }
+
+    .texto-disco {
+      padding: 15px;
+    }
+
+    .texto-disco h3 {
+      margin: 5px 0;
+    }
+
+    .texto-disco p {
+      line-height: 1.5;
+    }
+
+    .tipo-disco {
+      color: #ff5a5f;
+      font-size: 13px;
+    }
+
+    .preco {
+      color: #ff5a5f;
+      font-weight: bold;
+    }
+
+    .sobre {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #222222;
+      border-left: 4px solid #ef593e;
+    }
+
+    footer {
+      padding: 20px 0;
+      border-top: 1px solid #444444;
+      color: #bbbbbb;
+    }
+  </style>
+</head>
+<body>
+  <!-- Aluno: Jean Gabriel Torres | Matrícula: 261072230 -->
+  <header>
+    <div class="logo">FREQUÊNCIA DISCOS</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#colecao">Discos</a>
+      <a href="#sobre">Sobre a loja</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="destaque" id="inicio">
+      <div class="texto-destaque">
+        <p>RAP, HIP-HOP E RHYTHM AND BLUES</p>
+        <h1>Tem som que merece vinil.</h1>
+        <p>Uma loja pequena para quem gosta de escolher um disco, colocar para tocar e ouvir sem pular faixa.</p>
+        <a class="botao" href="#colecao">Ver os discos</a>
+      </div>
+      <img class="imagem-destaque" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=80" alt="Público assistindo a um show ao vivo">
+    </section>
+
+    <section id="colecao">
+      <div class="titulo-secao">
+        <div>
+          <h2>Discos da semana</h2>
+          <p>Uma seleção para começar ou aumentar sua coleção.</p>
+        </div>
+        <p class="sacola">SELEÇÃO EM VINIL</p>
+      </div>
+
+      <div class="lista-discos">
+        <article class="disco">
+          <span class="numero">01</span>
+          <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=80" alt="Show de rap com artista no palco">
+          <div class="texto-disco">
+            <p class="tipo-disco">VINIL • RAP EXPERIMENTAL</p>
+            <h3>Die Lit - Playboi Carti</h3>
+            <p>Batidas que parecem correr em outra velocidade. Um disco para ouvir alto e deixar a energia fazer o resto.</p>
+            <div class="preco">R$ 159,90</div>
+          </div>
+        </article>
+
+        <article class="disco">
+          <span class="numero">02</span>
+          <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80" alt="Luzes coloridas em um show de música">
+          <div class="texto-disco">
+            <p class="tipo-disco">VINIL • RAP E RHYTHM AND BLUES</p>
+            <h3>Take Care - Drake</h3>
+            <p>Para colocar numa noite tranquila: tem batida, tem melodia e tem faixa que dá vontade de cantar junto.</p>
+            <div class="preco">R$ 179,90</div>
+          </div>
+        </article>
+
+        <article class="disco">
+          <span class="numero">03</span>
+          <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=800&q=80" alt="Plateia reunida diante do palco">
+          <div class="texto-disco">
+            <p class="tipo-disco">VINIL • HIP-HOP</p>
+            <h3>good kid, m.A.A.d city - Kendrick Lamar</h3>
+            <p>Um álbum com começo, meio e fim. Cada faixa acrescenta uma parte à história.</p>
+            <div class="preco">R$ 189,90</div>
+          </div>
+        </article>
+
+        <article class="disco">
+          <span class="numero">04</span>
+          <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80" alt="Cantor usando microfone durante um show">
+          <div class="texto-disco">
+            <p class="tipo-disco">VINIL • RAP ALTERNATIVO</p>
+            <h3>IGOR - Tyler, The Creator</h3>
+            <p>Começa de um jeito, muda de clima no meio e termina com vontade de ouvir mais uma vez.</p>
+            <div class="preco">R$ 169,90</div>
+          </div>
+        </article>
+
+        <article class="disco">
+          <span class="numero">05</span>
+          <img src="https://images.unsplash.com/photo-1504704911898-68304a7d2807?auto=format&fit=crop&w=800&q=80" alt="Festival de música visto da plateia">
+          <div class="texto-disco">
+            <p class="tipo-disco">VINIL • TRAP</p>
+            <h3>ASTROWORLD - Travis Scott</h3>
+            <p>Graves fortes e sons que parecem de outro lugar. Se tiver caixa de som boa, melhor ainda.</p>
+            <div class="preco">R$ 199,90</div>
+          </div>
+        </article>
+
+        <article class="disco">
+          <span class="numero">06</span>
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80" alt="Cantor se apresentando com um microfone no palco">
+          <div class="texto-disco">
+            <p class="tipo-disco">VINIL • RAP</p>
+            <h3>LONG.LIVE.A$AP - A$AP Rocky</h3>
+            <p>Um disco que mistura batidas pesadas e faixas mais relaxadas. Bom para ouvir inteiro.</p>
+            <div class="preco">R$ 174,90</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <h2>Sobre a Loja</h2>
+      <p>Lojinha do Jean Torres.</p>
+    </section>
+  </main>
+
+  <footer>FREQUÊNCIA DISCOS - Jean Gabriel Torres - 2026</footer>
+</body>
+</html>
